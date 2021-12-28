@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav-bar") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-bar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar" id="myTopnav">
+            <div class="left-logo">
+                <a href="#"><img src="./pictures/LogoMakr-2dkW2a.png" alt=""></a>
+            </div>
+            <div class="right-items" id="myTopnav">
+
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Collection</a>
+                <a href="#">Contact</a>
+                <a href="#">Feedback</a>
+
+            </div>
+            <div class="right-ham">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+
+        </nav>
+        <div class="center-img">
+
+            <div class="main-text">
+                <div class="text typing-demo">
+                    <p>Hello I'm Sulav Baral</p>
+                </div>
+                <span class="line"></span>
+                <div class="p-container">
+                    <p class="welcome">Welcome to my website </p>
+                </div>
+                <button>Take a Tour</button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
