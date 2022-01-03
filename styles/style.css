@@ -13,6 +13,12 @@ a:visited {
     color: black;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*----------------------------------------navbar---------------------------------------*/
 .nav-bar {
     position: relative;
@@ -48,7 +54,7 @@ a:visited {
 /* rightside */
 .nav-bar .right-items {
     margin-right: 20px;
-    
+
 }
 
 .nav-bar .right-items a {
@@ -96,10 +102,11 @@ a:visited {
 header {
     /* background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
-    background: url("/pictures/received_333413647398719.jpeg");
+    background: url("./pictures/received_333413647398719.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    scroll-behavior: smooth;
 
 }
 
@@ -198,6 +205,59 @@ header {
     color: white;
 }
 
+/* -------------------------------------------aboutme ---------------------------------*/
+.about-me {
+    height: inherit;
+    min-height: 50vh;
+    background: #3b4a62;
+    scroll-behavior: smooth;
+}
+
+.picture img {
+    margin-left: 30%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.about-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 8%;
+    text-align: left;
+}
+
+/* -------------------abtme-------------------- */
+
+.photo-collection{
+    padding-top: 10px;
+    height: inherit;
+    min-height: 80vh;
+    background: #2b3c51;
+    scroll-behavior: smooth;
+}
+
+.img-text{
+    color: white;
+    text-align: center;
+}
+.ig-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.ig-photos img{
+    height: 300px;
+    width: 450px;
+}
+.first-row .second-row .third-row .fourth-row{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 @media only screen and (max-width: 600px) {
     .nav-bar .right-items a {
         display: none;
@@ -262,7 +322,7 @@ header {
     .right-items {
         right: -100%;
         width: 100%;
-        margin-top: 800px;
+        margin-top: 820px;
         background: #567093;
         backdrop-filter: blur(1em);
 
@@ -300,6 +360,35 @@ header {
         display: block;
         margin-top: 400px;
     }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        min-height: 50vh;
+        background: #3b4a62;
+        scroll-behavior: smooth;
+    }
+
+    .picture img {
+        margin-top: 60px;
+        margin-left: 0%;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    .about-text {
+        color: white;
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .about-text h1 {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 620px) {
@@ -330,7 +419,7 @@ header {
     }
 
     .right-items {
-        
+
         right: -100%;
         position: absolute;
         margin-top: 825px;
@@ -350,19 +439,20 @@ header {
     }
 
     .nav-bar.responsive .right-items {
-
         transition: 0.5s all;
-        right: -3.5%;
+        right: -3.75%;
+       
 
     }
-  
+
     .nav-bar.responsive {
         transition: 0.5s all ease-out;
         background: #567093;
+        
+  
     }
 
     .nav-bar.responsive a {
-
         float: none;
         display: block;
         text-align: center;
@@ -373,7 +463,7 @@ header {
         font-size: 1em;
     }
 
-    .tour{
+    .tour {
         margin-top: 10px;
         color: rgb(67, 159, 196);
         background-color: rgba(255, 255, 255, 0.829);
@@ -389,6 +479,7 @@ header {
         display: block;
         margin-top: 390px;
     }
+
 }
 
 @media only screen and (max-width: 420px) {
@@ -436,7 +527,7 @@ header {
         padding: 20px 20px;
     }
 
-    .tour{
+    .tour {
         margin-top: 10px;
         color: rgb(67, 159, 196);
         background-color: rgba(255, 255, 255, 0.829);
